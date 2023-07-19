@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 15px;
+
+}
+
+/* for pver lapping image */
+
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* for presourve positions */
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+.background{
+
+    transform: translateZ(-40px) scale(5);
+
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+
+.background, .foreground{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    /* for handling layer  */
+    z-index: -1;
+
+}
+h1{
+    position:absolute;
+    top: 5 rem;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 4px;
+    font-size: 7rem ; 
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0, 3);
+
+
+    
+}
+
+section{
+    background-color: rgb(45,45, 45);
+    padding: 5rem;
+    color:white;
+}
+.secheading{
+    position: absolute;
+    left: 30%;
+    font-size: 2rem;
+    padding: 0 4rem;
+}
+.text{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 4rem 0;
+    
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+    height: 300px;
+}
+
+.dec{
+    position: absolute;
+    padding: 2rem 4rem;
+    font-size: 3rem;
+    top: 35%;
+    left: 36%;
+    
+    
+
+
+}
+/* image tag is not use qki print nikal ne baad imag tag se print acga nhi aata */
+/* and backgroung tag se makhan print ata hai */
+.bg1{
+    background-image: url(bike.jpg);
+    
+    
+    
+}
+.bg2{
+    background-image: url(paragriding.jpg);
+    
+    
+}
+.bg3{
+    background-image: url(surfing.jpg);
+    
+    
+}
